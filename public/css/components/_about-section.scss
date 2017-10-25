@@ -1,0 +1,45 @@
+.about-section {
+  @extend .section-commons;
+  background: palette(green);
+  color: palette(white);
+  padding: ritmo(10) 40px;
+
+  p {
+    @include container(1000px);
+    font-weight: 300;
+  }
+
+  .section-titles__underlines {
+    background: palette(white);
+
+    &:after {
+      background: palette(white);
+    }
+  }
+
+  .about-links {
+    font-weight: 700;
+    color: white;
+    transition: background ease 0.3s;
+
+    &:hover {
+      background: palette(green, light);
+      color: palette(green, x-dark);
+    }
+  }
+
+  h6 {
+    font-weight: 300;
+    display: block;
+    margin-bottom: ritmo(3);
+
+    &:before {
+      content: "";
+      display: block;
+      background: rgba(palette(green, x-dark), .45);
+      height: 1px;
+      width: 120px;
+      margin: ritmo(5) auto;
+    }
+  }
+}

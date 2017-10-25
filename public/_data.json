@@ -1,0 +1,97 @@
+{
+  "index": {
+    "title": "Drupal Day Portugal",
+    "speakers": {
+      "alberto": {
+        "name": "Alberto Leal",
+        "drupal": "https://www.drupal.org/u/apermuy",
+        "image": "alberto_leal.jpg",
+        "company": "CODERY OS",
+        "companyUrl": "http://www.codery.es/",
+        "presentationTitle": "Cultural Heritage & Drupal",
+        "presentationVideo": "To be defined",
+        "presentationUrl": "To be defined"
+      },
+      "francisco": {
+        "name": "Francisco Almeida",
+        "drupal": "https://www.drupal.org/u/chicodasilva",
+        "image": "francisco.jpg",
+        "company": "Pictonio",
+        "companyUrl": "http://pictonio.com/",
+        "presentationTitle": "To be defined",
+        "presentationVideo": "To be defined",
+        "presentationUrl": "To be defined"
+      },
+      "hernani": {
+        "name": "Hernâni Borges de Freitas",
+        "drupal": "https://www.drupal.org/u/hernani",
+        "image": "hernani.png",
+        "company": "Freelance Consultant",
+        "companyUrl": "http://hernani.pt/",
+        "presentationTitle": "Upgrade para Drupal 8 - Serbenfiquista.com case study",
+        "presentationVideo": "To be defined",
+        "presentationUrl": "To be defined"
+      },
+      "joao": {
+        "name": "João Belchior",
+        "drupal": "https://www.drupal.org/u/Jolidog",
+        "image": "joaobelchior.jpg",
+        "company": "Marzee Labs",
+        "companyUrl": "https://marzeelabs.org/",
+        "presentationTitle": "Drupal Decoupled on ARTE",
+        "presentationVideo": "To be defined",
+        "presentationUrl": "To be defined"
+      },
+      "luissantos": {
+        "name": "Luis Santos",
+        "drupal": "https://www.drupal.org/u/fall_0ut",
+        "image": "luissantos.png",
+        "company": "Open Quest",
+        "companyUrl": "https://www.openquest.pt/",
+        "presentationTitle": "To be defined",
+        "presentationVideo": "To be defined",
+        "presentationUrl": "To be defined"
+      },
+      "marcosmarado": {
+        "name": "Marcos Marado",
+        "drupal": "https://ansol.org",
+        "image": "marcosmarado.jpg",
+        "company": "ANSOL",
+        "companyUrl": "https://ansol.org",
+        "presentationTitle": "Software Livre em Portugal",
+        "presentationVideo": "To be defined",
+        "presentationUrl": "To be defined"
+      },
+      "ricardoa": {
+        "name": "Ricardo Amaro",
+        "drupal": "https://www.drupal.org/u/ricardoamaro",
+        "image": "ricardoa.jpg",
+        "company": "Acquia",
+        "companyUrl": "https://www.acquia.com/",
+        "presentationTitle": "To be defined",
+        "presentationVideo": "To be defined",
+        "presentationUrl": "To be defined"
+      },
+      "ricardom": {
+        "name": "Ricardo Marcelino",
+        "drupal": "https://www.drupal.org/u/rfmarcelino",
+        "image": "ricardom.jpg",
+        "company": "Omibee",
+        "companyUrl": "https://omibee.com/",
+        "presentationTitle": "Manual de sobrevivência do desenvolvimento web",
+        "presentationVideo": "To be defined",
+        "presentationUrl": "To be defined"
+      },
+      "ruifig": {
+        "name": "Rui Figueiredo",
+        "drupal": "https://www.drupal.org/u/ruifigueiredo",
+        "image": "ruifig.png",
+        "company": "EDGE",
+        "companyUrl": "http://www.edge.pt/",
+        "presentationTitle": "Drupal 8 - Internet of things",
+        "presentationVideo": "To be defined",
+        "presentationUrl": "To be defined"
+      }
+    }
+  }
+}
