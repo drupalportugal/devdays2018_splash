@@ -1,4 +1,5 @@
-.button-green {
+.button-blue,
+%button-blue {
   display: inline-block;
   margin: ritmo(3) auto;
   padding: ritmo(2) 15px;
@@ -12,13 +13,13 @@
   transition: background ease 0.2s;
 
   &:hover {
-    color: palette(blue, light);
+    color: palette(white);
     background: palette(blue, x-dark);
   }
 }
 
 .button-white {
-  @extend .button-green;
+  @extend %button-blue;
   background: palette(white);
   padding: ritmo(3) 20px;
   color: palette(blue);
@@ -31,7 +32,7 @@
 }
 
 .button-light-green {
-  @extend .button-green;
+  @extend %button-blue;
   background: palette(blue, light);
   padding: ritmo(3) 20px;
   color: palette(blue, x-dark);

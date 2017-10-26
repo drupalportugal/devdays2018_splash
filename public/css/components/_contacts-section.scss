@@ -1,16 +1,12 @@
 .contacts-section {
-  @extend .section-commons;
-  height: 1%;
-  overflow: hidden;
-  background: palette(blue, x-light);
-  padding: ritmo(10) 40px ;
   color: palette(blue);
+  flex: 0 0 100%;
 
-  .section-titles__underlines {
-    background: palette(blue);
+  @include mq($from: break-large) {
+    flex: 1 1 auto;
 
-    &:after {
-      background: palette(blue);
+    .section-titles {
+      text-align: left;
     }
   }
 }
@@ -18,6 +14,10 @@
 .contact-form {
   text-align: center;
   width: 100%;
+
+  @include mq($from: break-large) {
+    text-align: left;
+  }
 }
 
 .contact-form__inputs {
@@ -43,6 +43,10 @@
   @include mq($from: break-medium) {
     margin: 0 auto ritmo(7) auto;
   }
+
+  input {
+    border: 1px solid palette(grey);
+  }
 }
 
 .contact-form__inputs--message-field {
@@ -56,7 +60,7 @@
 }
 
 .contact-form__inputs__content {
-  width: 70%;
+  width: 100%;
   height: 100%;
   border: none;
   border-radius: 5px;
@@ -64,10 +68,14 @@
   text-indent: 20px;
   margin-bottom: ritmo(8);
   @include container(650px);
+
+  @include mq($from: break-medium) {
+    width: 70%;
+  }
 }
 
 .contact-form__inputs__submit {
-  @extend .button-green;
+  @extend %button-blue;
   padding: ritmo(2) 40px;
   margin: 0 auto;
   border: none;

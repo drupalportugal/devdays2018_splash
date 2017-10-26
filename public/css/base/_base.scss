@@ -103,7 +103,8 @@ ul, li {
   list-style-type: none;
 }
 
-.section-commons {
+.section-commons,
+%section-commons {
   width: auto;
   text-align: center;
   min-height: 1%;

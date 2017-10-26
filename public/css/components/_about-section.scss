@@ -1,5 +1,5 @@
 .about-section {
-  @extend .section-commons;
+  @extend %section-commons;
   background: palette(white);
   color: palette(blue, x-dark);
   padding: ritmo(10) 40px;
@@ -20,16 +20,41 @@
 }
 
 .about-section__content__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  @include container(1200px);
 
   @include mq($from: break-medium) {
     margin: 60px auto 40px;
   }
+
+  @include mq($from: break-large) {
+    flex-wrap: nowrap;
+  }
 }
 
-.about__main-logo {
-  margin: ritmo(10) auto;
-  width: 200px;
+.about-section__content {
+  flex: 0 0 100%;
+  text-align: center;
+  margin-bottom: ritmo(7);
+
+  @include mq($from: break-large) {
+    flex: 1 1 200px;
+    text-align: center;
+    padding-right: 40px;
+    padding-top: 40px;
+    margin-bottom: 0;
+
+    p {
+      text-align: left;
+    }
+  }
 }
+
+// .about__main-logo {
+//   margin: ritmo(10) auto;
+//   width: 200px;
+// }
 
 .about-section__organization {
   margin: ritmo(6) auto;
