@@ -2,20 +2,10 @@
   @extend %section-commons;
   background: palette(white);
   color: palette(blue, x-dark);
-  padding: ritmo(10) 40px;
+  padding: ritmo(5) 20px;
 
-  p {
-    @include container(800px);
-    font-weight: 400;
-    color: palette(grey, dark);
-  }
-
-  .section-titles__underlines {
-    background: palette(blue, x-dark);
-
-    &:after {
-      background: palette(blue, x-dark);
-    }
+  @include mq($from: break-large) {
+    padding: ritmo(10) 40px;
   }
 }
 
@@ -38,32 +28,20 @@
   text-align: center;
   margin-bottom: ritmo(7);
 
+  h4 {
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+  }
+
   @include mq($from: break-large) {
     flex: 1 1 200px;
     text-align: center;
-    padding-right: 40px;
-    padding-top: 40px;
+    padding-right: 60px;
     margin-bottom: 0;
 
-    p {
+    h4, p {
       text-align: left;
     }
-  }
-}
-
-// .about__main-logo {
-//   margin: ritmo(10) auto;
-//   width: 200px;
-// }
-
-.about-section__organization {
-  margin: ritmo(6) auto;
-  padding: 0 10%;
-  text-align: center;
-
-  p {
-    margin-bottom: ritmo(1);
-    color: palette(blue, x-dark);
-    text-transform: uppercase;
   }
 }

@@ -1,5 +1,5 @@
 .contacts-section {
-  color: palette(blue);
+  color: palette(blue, dark);
   flex: 0 0 100%;
 
   @include mq($from: break-large) {
@@ -21,22 +21,16 @@
 }
 
 .contact-form__inputs {
-  height: ritmo(14);
+  height: ritmo(12);
   margin: 0 auto ritmo(4) auto;
   font-weight: 300;
-
-  @include mq($until: break-small) {
-    height: ritmo(8);
-    @include ritmo-font-size(14px);
-  }
+  @include ritmo-font-size(14px);
 
   @include mq($from: break-small) {
-    height: ritmo(8);
     @include ritmo-font-size(14px);
   }
 
   @include mq($from: break-medium-small) {
-    height: ritmo(12);
     @include ritmo-font-size(18px);
   }
 
@@ -68,10 +62,6 @@
   text-indent: 20px;
   margin-bottom: ritmo(8);
   @include container(650px);
-
-  @include mq($from: break-medium) {
-    width: 70%;
-  }
 }
 
 .contact-form__inputs__submit {
