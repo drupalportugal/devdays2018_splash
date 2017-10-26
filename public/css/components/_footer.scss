@@ -9,6 +9,7 @@
 
   @include mq($from: break-large) {
     flex-wrap: nowrap;
+    padding: 20px 10px;
   }
 
   p {
@@ -18,21 +19,12 @@
   }
 }
 
-
-.footer__social {
-  padding: 20px;
-
-  @include mq($from: break-large) {
-    padding: 20px 40px 20px 20px;
-  }
-}
-
 .footer__organization {
   text-align: center;
   padding: 20px;
   
     @include mq($from: break-large) {
-      padding: 20px 20px 20px 40px;
+      padding: 20px 40px 20px 20px;
     }
 
   p {
@@ -45,4 +37,12 @@
 .footer__organization__logo {
   width: 200px;
   display: block;
+}
+
+.footer__social {
+  padding: 20px;
+
+  @include mq($from: break-large) {
+    padding: 20px 20px 20px 40px;
+  }
 }
