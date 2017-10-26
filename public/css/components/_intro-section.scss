@@ -1,136 +1,133 @@
-.intro-section {
-  background: palette(white);
-  min-height: 1%;
-  overflow: hidden;
-  margin-top: 0;
-  padding-top: ritmo(16);
+%above_bg_overlay {
+  position: relative;
+  z-index: 10;
+}
 
-  @include mq($from: break-medium) {
-    margin-top: ritmo(10);
-    position: relative;
-    padding-top: ritmo(14);
+.intro-section {
+  @extend %above_bg_overlay;
+  background: palette(white);
+  overflow: hidden;
+  background: url("/images/home/background.jpg");
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: palette(black);
+    z-index: 1;
+    opacity: .5;
+
+    @include mq($from: break-medium) {
+      opacity: .35;
+    }
   }
 }
 
-.intro-section__left {
+/*
+** This is the azulejo mosaic containing the azulejo logo
+*/
 
-  color: palette(green);
+.intro-section__azulejo {
+  @extend %above_bg_overlay;
+  height: 275px;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin-top: ritmo(8);
+}
+
+.intro-section__azulejo__center {
+  height: 276px;
+  width: 459px;
   text-align: center;
-  @include span(6);
-  margin-bottom: ritmo(5);
+  margin: 0;
+  padding: 0;
+}
 
-  @include mq($from: break-large) {
-    text-align: left;
-    @include span(isolate 3.5 at 1);
-    padding-left: 25px;
-  }
+.intro-section__azulejo__left,
+.intro-section__azulejo__right {
+  height: 276px;
+  flex: 1 0 auto;
+  margin: 0;
+  padding: 0;
+  background-repeat: repeat-x;
+  background-size: 275px 276px;
+}
 
-  h5 {
-    @include ritmo-font-size(24px);
-    font-weight: 300;
-    text-transform: uppercase;
-    margin-bottom: ritmo(1);
-  }
+.intro-section__azulejo__left {
+  background: url("/images/home/pattern_azulejo_left.svg");
+  background-position: top right;
+}
 
-  h1 {
-    @include ritmo-font-size(60px);
-    letter-spacing: 0.2em;
-    text-transform: uppercase;
-    margin-bottom: 0;
-
-    @include mq($from: break-small) {
-      @include ritmo-font-size(75px);
-    }
-
-    @include mq($from: break-large) {
-      @include ritmo-font-size(45px);
-    }
-
-    @include mq($from: 1350px) {
-      @include ritmo-font-size(60px);
-    }
-
-    @include mq($from: 1750px) {
-      @include ritmo-font-size(75px);
-    }
-  }
-
-  .know-more {
-    @extend .button-green;
-
-    @include mq($from: break-large) {
-      @include ritmo-font-size(16px);
-    }
-  }
+.intro-section__azulejo__right {
+  background: url("/images/home/pattern_azulejo_right.svg");
+  background-position: top left;
 }
 
 .intro-section__title {
-  @include span(6);
-  margin-bottom: ritmo(5);
-
-  @include mq($from: break-large) {
-     @include span(isolate 2 at 1);
-  }
-
-  @include mq($from: break-big) {
-     @include span(isolate 2 at 2);
-  }
-}
-
-.intro-section__organization {
-  @include span(6);
-  padding: 0 5%;
+  @extend %above_bg_overlay;
+  @include container(1000px);
+  margin: 40px auto 20px;
+  color: palette(white);
   text-align: center;
-
-  @include mq($from: break-small) {
-    padding: 0 20%;
+  text-transform: uppercase;
+  
+  @include mq($until: break-large) {
+    padding: 0 10px;
   }
 
-  @include mq($from: break-large) {
-     @include span(isolate 3 at 4.5);
-     text-align: left;
-  }
+  h1 {
+    @include ritmo-font-size($h4-font-size);
+    margin: 0;
+    line-height: 1.2;
+    font-weight: 400;
 
-  p {
-    margin-bottom: ritmo(1);
-    color: palette(green);
-  }
-}
-
-.intro-section__organization__coordination {
-  overflow: hidden;
-  margin-bottom: ritmo(4);
-}
-
-.intro-section__organization__logo {
-  display: inline-block;
-  vertical-align: top;
-  margin: 0 20px;
-
-  @include mq($from: break-large) {
-    margin: 0 40px 0 0;
-
-    &:last-child {
-      margin-right: 0;
+    @include mq($from: break-medium) {
+      @include ritmo-font-size($h2-font-size);
+      font-weight: 700;
+      letter-spacing: 3px;
     }
   }
-}
 
-.intro-section__right {
-  @include span(6);
-  position: relative;
-  text-align: center;
-  padding-top: ritmo(6);
+  h2 {
+    @include ritmo-font-size($h5-font-size);
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.2;
 
-  @include mq($from: break-large) {
-    @include span(isolate 2.5 at 4.5);
-    padding-top: 0;
+    @include mq($from: break-medium) {
+      @include ritmo-font-size($h4-font-size);
+    }
+  }
+
+  h3 {
+    @include ritmo-font-size(18px);
+    margin: 0;
+    font-weight: 400;
+    line-height: 1.2;
   }
 }
 
-.intro-section__right__img {
+.intro-section__text {
+  @extend %above_bg_overlay;
+  @include container(1000px);
+  margin: 0 auto 50px;
+  color: palette(white);
+  text-align: center;
 
-  @include mq($from: break-large) {
-    max-width: none;
+  @include mq($from: break-medium) {
+    @include ritmo-font-size(25px);
+    line-height: 1.4em;
+  }
+
+  @include mq($until: break-large) {
+    padding: 0 10px;
   }
 }

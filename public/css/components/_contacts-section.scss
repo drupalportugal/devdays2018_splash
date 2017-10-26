@@ -2,15 +2,15 @@
   @extend .section-commons;
   height: 1%;
   overflow: hidden;
-  background: palette(green, x-light);
-  padding: ritmo(10) 40px ritmo(1) 40px;
-  color: palette(green);
+  background: palette(blue, x-light);
+  padding: ritmo(10) 40px ;
+  color: palette(blue);
 
   .section-titles__underlines {
-    background: palette(green);
+    background: palette(blue);
 
     &:after {
-      background: palette(green);
+      background: palette(blue);
     }
   }
 }
@@ -60,7 +60,7 @@
   height: 100%;
   border: none;
   border-radius: 5px;
-  color: palette(grey);
+  color: palette(grey, dark);
   text-indent: 20px;
   margin-bottom: ritmo(8);
   @include container(650px);
