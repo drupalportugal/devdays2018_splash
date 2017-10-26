@@ -1,34 +1,48 @@
 .footer {
-  width: auto;
   background: palette(blue, x-dark);
   text-align: center;
   color: palette(white);
-  padding: 0 0 ritmo(2) 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+
+  @include mq($from: break-large) {
+    flex-wrap: nowrap;
+    padding: 20px 10px;
+  }
 
   p {
-
     @include mq($until: break-medium-small) {
       @include ritmo-font-size(14px);
     }
   }
+}
 
-  .drupal-social__wrapper {
-    margin-bottom: ritmo(3);
+.footer__organization {
+  text-align: center;
+  padding: 20px;
+  
+    @include mq($from: break-large) {
+      padding: 20px 40px 20px 20px;
+    }
+
+  p {
+    margin-bottom: ritmo(1);
+    color: palette(white);
+    text-transform: uppercase;
   }
 }
 
-.footer__copyright {
-  background: palette(blue);
-  padding: 0 0 ritmo(2) 0;
-
-  p {
-    top:0;
-    display: block;
-    position: relative;
-    transform: translateY(ritmo(3));
-  }
+.footer__organization__logo {
+  width: 200px;
+  display: block;
 }
 
 .footer__social {
-  padding-top: ritmo(4);
+  padding: 20px;
+
+  @include mq($from: break-large) {
+    padding: 20px 20px 20px 40px;
+  }
 }
