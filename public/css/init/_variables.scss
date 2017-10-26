@@ -24,10 +24,10 @@ $code-font-family: monospace;
 // Header font sizes
 $h1-font-size: 48px;
 $h2-font-size: 40px;
-$h3-font-size: 33px;
+$h3-font-size: 32px;
 $h4-font-size: 28px;
-$h5-font-size: 23px;
-$h6-font-size: 19px;
+$h5-font-size: 25px;
+$h6-font-size: 21px;
 
 
 
@@ -43,13 +43,14 @@ $palettes: (
     base: rgb(0, 0, 0) // #000 palette(black)
   ),
   grey: (
+    dark: rgb(60, 60, 60), // #3c3c3c palette(grey, dark)
     base: rgb(210, 210, 210) // #c5ccd1 palette(grey)
   ),
-  green: (
-    x-light: rgb(217, 244, 244), // #D9F4F4 palette(green, x-light)
-    light: rgb(0, 248, 248), // #00F8F8 palette(green, light)
-    base: rgb(0, 165, 165), // #00A5A5 palette(green)
-    x-dark: rgb(0, 73, 73) // #004949 palette(green, x-dark)
+  blue: (
+    x-light: rgb(173, 218, 234), // #addaea palette(blue, x-light)
+    light: rgb(127, 157, 211), // #7f9dd3 palette(blue, light)
+    base: rgb(86, 118, 185), // #5676b9 palette(blue)
+    x-dark: rgb(54, 78, 122) // #354e7a palette(blue, x-dark)
   ),
   red: (
     base: rgb(171, 0, 0), // #AB0000 palette(red)

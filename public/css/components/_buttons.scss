@@ -2,7 +2,7 @@
   display: inline-block;
   margin: ritmo(3) auto;
   padding: ritmo(2) 15px;
-  background: palette(green);
+  background: palette(blue);
   border-radius: 5px;
   color: palette(white);
   text-transform: uppercase;
@@ -12,8 +12,8 @@
   transition: background ease 0.2s;
 
   &:hover {
-    color: palette(green, light);
-    background: palette(green, x-dark);
+    color: palette(blue, light);
+    background: palette(blue, x-dark);
   }
 }
 
@@ -21,25 +21,25 @@
   @extend .button-green;
   background: palette(white);
   padding: ritmo(3) 20px;
-  color: palette(green);
+  color: palette(blue);
   transition: background color ease 0.2s;
 
   &:hover {
-    background: palette(green, light);
-    color: palette(green, x-dark);
+    background: palette(blue, light);
+    color: palette(blue, x-dark);
   }
 }
 
 .button-light-green {
   @extend .button-green;
-  background: palette(green, light);
+  background: palette(blue, light);
   padding: ritmo(3) 20px;
-  color: palette(green, x-dark);
+  color: palette(blue, x-dark);
   transition: background color ease 0.2s;
 
   &:hover {
     background: palette(white);
-    color: palette(green, x-dark);
+    color: palette(blue, x-dark);
   }
 }
 
