@@ -2,10 +2,10 @@
   @extend %section-commons;
   background: palette(white);
   color: palette(blue, x-dark);
-  padding: ritmo(5) 20px;
+  padding: ritmo(3) 20px;
 
   @include mq($from: break-large) {
-    padding: ritmo(10) 40px;
+    padding: 0 40px;
   }
 }
 
