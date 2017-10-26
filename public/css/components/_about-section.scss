@@ -45,3 +45,22 @@
     }
   }
 }
+
+.about-section__separator,
+.about-section__separator_2 {
+  width: 100%;
+  height: 89px;
+  background-position: top right;
+  background-size: 447px 91px;
+  background-repeat: repeat-x;
+}
+
+.about-section__separator {
+  background: url("/images/home/pattern_small_azulejo_blue_dark.svg") palette(white);
+}
+
+.about-section__separator_2 {
+  background: url("/images/home/pattern_small_azulejo_white.svg") palette(blue, x-dark);
+}
+
+

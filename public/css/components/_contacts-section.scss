@@ -1,5 +1,5 @@
 .contacts-section {
-  color: palette(blue, dark);
+  color: palette(blue, x-dark);
   flex: 0 0 100%;
 
   @include mq($from: break-large) {
