@@ -8,7 +8,7 @@
   background: palette(white);
   overflow: hidden;
   background: url("/images/home/background.jpg");
-  background-position: center top;
+  background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -45,6 +45,11 @@
   @include mq($from: break-large) {
     margin-top: ritmo(12);
   }
+
+
+  @include mq($from: break-big) {
+    margin-top: ritmo(30);
+  }
 }
 
 .intro-section__azulejo__center {
@@ -79,12 +84,19 @@
   @extend %above_bg_overlay;
   @include container(1000px);
   margin: 40px auto 20px;
+  padding: 0 10px;
   color: palette(white);
   text-align: center;
   text-transform: uppercase;
+
+  @include mq($until: break-small) {
+    margin: 10px auto 20px;
+    padding: 10px;
+  }
   
-  @include mq($until: break-large) {
-    padding: 0 10px;
+  @include mq($from: break-large) {
+    padding: 0;
+    margin: 40px auto 20px;
   }
 
   h1 {
@@ -122,7 +134,7 @@
 .intro-section__text {
   @extend %above_bg_overlay;
   @include container(1000px);
-  margin: 0 auto 50px;
+  margin: 0 auto ritmo(10);
   color: palette(white);
   text-align: center;
 
@@ -133,5 +145,9 @@
 
   @include mq($until: break-large) {
     padding: 0 10px;
+  }
+
+  @include mq($from: break-big) {
+    margin: 0 auto ritmo(22);
   }
 }
