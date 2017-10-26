@@ -13,9 +13,8 @@
   }
 
   p {
-    @include mq($until: break-medium-small) {
-      @include ritmo-font-size(14px);
-    }
+    text-transform: uppercase;
+    @include ritmo-font-size(14px);
   }
 }
 
@@ -30,7 +29,6 @@
   p {
     margin-bottom: ritmo(1);
     color: palette(white);
-    text-transform: uppercase;
   }
 }
 
