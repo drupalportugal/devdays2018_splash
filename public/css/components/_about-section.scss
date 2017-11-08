@@ -46,6 +46,15 @@
   }
 }
 
+.about-section__logo-partner {
+  width: 250px;
+  margin: 0 auto 30px;
+
+  @include mq($from: break-large) {
+    margin: 0;
+  }
+}
+
 .about-section__separator,
 .about-section__separator_2 {
   width: 100%;
